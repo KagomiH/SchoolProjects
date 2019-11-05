@@ -23,11 +23,12 @@
         For MsgCounter = 1 To Finalstep Step 1
             If MsgCounter Mod 7 = 0 Then
 
-                LBLOutput.Text += MsgCounter.ToString & " " & Msg1 & vbCrLf
-
+                'LBLOutput.Text &= MsgCounter.ToString & " " & Msg1 & vbCrLf
+                TextBox1.Text &= MsgCounter.ToString & " " & Msg1 & vbCrLf
             Else
 
-                LBLOutput.Text += MsgCounter.ToString & " " & Msg2 & " "
+                'LBLOutput.Text &= MsgCounter.ToString & " " & Msg2 & " "
+                TextBox1.Text &= MsgCounter.ToString & " " & Msg2
 
             End If
 
