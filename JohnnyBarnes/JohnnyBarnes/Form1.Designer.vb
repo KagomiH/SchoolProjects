@@ -28,6 +28,7 @@ Partial Class Form1
         Me.LBLOutputTotalMessages = New System.Windows.Forms.Label()
         Me.LBLEnterTime = New System.Windows.Forms.Label()
         Me.LBLProgramName = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'BTNCalculate
@@ -83,12 +84,24 @@ Partial Class Form1
         Me.LBLProgramName.TabIndex = 6
         Me.LBLProgramName.Text = "Johnny Barnes Loop"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(13, 143)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TextBox1.Size = New System.Drawing.Size(483, 342)
+        Me.TextBox1.TabIndex = 7
+        '
         'Form1
         '
         Me.AcceptButton = Me.BTNCalculate
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1247, 845)
+        Me.ClientSize = New System.Drawing.Size(528, 518)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.LBLProgramName)
         Me.Controls.Add(Me.LBLEnterTime)
         Me.Controls.Add(Me.LBLOutputTotalMessages)
@@ -108,4 +121,5 @@ Partial Class Form1
     Friend WithEvents LBLOutputTotalMessages As Label
     Friend WithEvents LBLEnterTime As Label
     Friend WithEvents LBLProgramName As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class
